@@ -1,13 +1,17 @@
 const BoxColor = ({ color, isActive, text }) => {
   return (
     <>
-      <div
-        className='box'
-        style={{ backgroundColor: isActive ? color : 'transparent' }}>
-        {isActive ? `¡Soy el color ${color}!` : `No soy el color ${color}`}
-        <br />
-        <span>{text}</span>
-      </div>
+        <div
+      className={`box ${isActive ? color : ''}`}
+      style={{
+        backgroundColor: isActive ? color : 'transparent',
+        border: `2px solid ${color}`,
+      }}
+    >
+      <p style={{ color: isActive ? '#000' : color }}>
+        {isActive ? `Yes, I'm ${color} color` : `I'm not a ${color} color`}
+      </p>
+    </div>
     </>
   );
 };
