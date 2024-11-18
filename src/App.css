@@ -1,3 +1,79 @@
+body {
+  background-color: #111;
+  margin: 0;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+}
+
+
+.container {
+  background-color: #222; 
+  width: 660px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  border: 2px solid white; 
+  justify-content: center;
+}
+
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent; 
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 660px;
+  background-color: #222; 
+  padding: 20px;
+  border-radius: 5px;
+  border: 2px solid white; 
+}
+
+
+input {
+  width: 60%; 
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+input:focus {
+  outline: none;
+  background-color: #444; 
+}
+
+/* 
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -6,7 +82,7 @@
 }
 
 /* CSS de regalo */
-
+/*
 .container {
   width: 660px;
   display: flex;
@@ -20,6 +96,7 @@
 }
 
 /* Estilos para cada una de las box */
+/*
 .box {
   display: flex;
   justify-content: center;
@@ -32,6 +109,7 @@
 }
 
 /* Estilos para el input */
+/*
 input {
   width: 50%;
   padding: 10px;
@@ -44,7 +122,7 @@ input {
   margin-bottom: 20px;
 }
 
-
+*/
 
 
 

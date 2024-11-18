@@ -16,15 +16,26 @@ const MyForm = () => {
   };
 
   return (
-    <div>
-      <input
+    <>
+       <input
         ref={inputRef}
         type="text"
         placeholder="Escribe un color..."
         value={inputValue}
         onChange={handleChange}
-      />
-      <div className="box-container">
+        style={{
+          width: '60%',
+          padding: '10px',
+          fontSize: '16px',
+          borderRadius: '5px',
+          border: '2px solid white',
+          backgroundColor: '#333',
+          color: 'white',
+          marginBottom: '20px',
+          textAlign: 'center',
+        }}
+        />
+        <div className="box-container">
         {colors.map((color) => (
           <BoxColor
             key={color}
@@ -32,8 +43,8 @@ const MyForm = () => {
             isActive={inputValue === color}
           />
         ))}
-      </div>
-    </div>
+        </div>
+    </>
   );
 };
 export default MyForm;
